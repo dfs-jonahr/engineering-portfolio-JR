@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Engineering Portfolio </h1>
+      
+      <h3 class= "Name"> by Jonah Rodriguez </h3>
+      
+      <h5 class ="Description"> I am a post graduate from Cal Poly Pomona's Bachelor of Mechanical Engineering Program and this is my engineering portfolio. This is a portfolio containing my major projects during my time in Cal Poly Pomona. It contains projects that involve control loops, programming and coding, hardware knowledge, and engineering experience
+           This experience is not limited to college, but also includes my work during my summer internship and OptoKnowledge Systems Incorporated (OKSI). These projects have taught me engineering mentalities and practices that I could use in the workplace and I emplore you to take a look and see how my experience could line up with your goals for the job.</h5>
+      
+      <div id="Inverted Pendulum">
+        
+      <h2 class= "InvertedPendulum"> Inverted Pendulum</h2>
+      
+      <h3 class= "Date"> April - May 2023 </h3>
+      
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczP6ZS8uLrskT4ENaCTrvwZoV2sGsdragySEpJLQYBOnTsPFJG1gtoPembjsGK7s6QmzlLz8sYxmhLSH-UF08dYmFU84Wq8M1OvYZKsZIVlVbuyy4MrDZgIfyvEFHuIzd0FIzPj8D3imQChyteXldZM=w505-h629-s-no-gm?authuser=0" width="286.5" height="400" class="center">
+      
+      <!-- Supposed to be a subtitle -->
+      <p class="Objs_and_Process1"> Objectives and Process</p>
+      
+      <p> An inverted pendulum is a concept that allows a rod to balance upright without human assistance. There are many ways to balance the pendulum, but in this case a wheel was used to balance it by the properties of momentum. The pendulum would
+      operate by stopping the wheel when it reached the middle and move the wheel depending on how far away the arm was to being straight up. The arm would receive feedback from a sensor to allow itself to know if it needed correcting. And example of an inverted pendulum is shown below. Having the position, 
+      acceleration, and desired position would allow for the creation of a control loop. Before the pendulum could start moving, it needed the correct parts. We 3-D printed the wheel, arm, and base which was super glued to the wooden base. Skateboard bearings were used to allow the arm to move freely in one axis of 
+      motion. In terms of the electronics, a 12V motor, IMU (Inertial Measurement Unit), an Arduino board, and a 12V battery were used. The motor was the main source of movement, the IMU sensor outputted the angular position and acceleration
+      and the Arduino board had all the algorithms on it. Some of those included determining the angular speed based on the difference angular position and the time between outputs, and running the motor based on the position, speed, and direction. </p>
+      
+      <!-- Supposed to be a subtitle -->
+      <p class="Results1"> Results</p>
+      
+      <p> The inverted pendulum worked for 10 seconds and created a graph as seen below. The controller ended up worked best as a PD controller as opposed to a slightly more accurate PID controller. This was the case body
+      the proportion part of the controller used the position, and the derivative part used the angular speed. To implement a PID controller, we would have needed to start the proportional part as the speed
+      so that the integral part could be the position of the arm. Despite this, the pendulum still balanced correctly and the code remained simpler to implement. Below is a 3D model of our inverted pendulum.</p>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczNVwuFDLH26yomt9GDCNigNRALz6IPgoTmvtVSuRq-MNhxeUBuzmUjFlvRxvt9tXNh_yvM4PVEcpLiZl7ojfE3K3OX8oyQyvpXDMo2xNPMzKte4RufLXq657HFY-kJ0vZQcGBrMO0JmDj7YPwJXm_o=w1023-h661-s-no-gm?authuser=0" width="519px" height="300px" class="center">
+      
+
+      <iframe width="908" height="511" src="https://www.youtube.com/embed/Yl7wfwx1veI" title="Jonah Rodriguez - Inverted Pendulum" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- Autonomous Delivery Cart -->
+      
+      <div id="Autonomous Delivery Cart">
+        
+      <h2 class= "DeliveryCart"> Autonomous Delivery Cart</h2>
+      
+      <h3 class= "Date"> January - May 2023 </h3>
+      
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczO5QmQJqfMBYFq1Y_F9s8KHwEXjHIT_IOrdrMQpm5yw1Oq7zC7oN6_Pf59Ee7HeO9xcLc9vWNVrqPLI-GvEF6GSP-nymaVnfsF3XF86YMv1bjn1g3SjUDRS4vb2y2E7UOd6vHibehhM37KPhtzlj-M=w659-h879-s-no-gm?authuser=0" width="286.5" height="400" class = "right">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczOji8odhzE9LYXGy7qKLDR38xO0ii4XanNNQ0NBrhBS2KjBhU4xUDlHQj49YnYQGqI0wG5bblZReCYWdSPz8eRhWmcK1ixw1D3BFJB00AWF4FRIeWiHMgwWAiFpEyWinLPd9-NwVDcfNFCYoFo-HP4=w659-h879-s-no-gm?authuser=0" width="286.5" height="400" class = "left">
+      
+      
+      <!-- Supposed to be a subtitle -->
+      <p class="Objs_and_Process2"> Objectives and Process</p>
+      
+      <p>My objective in this project is to create an efficient and reliable waypoint management system, 
+      leveraging GPS and IMU technologies. This system is intended not only to fulfill its standalone role 
+      but also to seamlessly integrate with the contributions of my teammates. For instance, the precise 
+      navigation enabled by my waypoint management system will complement the efforts of my colleagues who 
+      are focusing on other critical aspects like the propulsion system, battery management, and user interface. 
+      Together, these interconnected components will form a cohesive and sophisticated autonomous cart system.
+      The harmonious integration of these subsystems is crucial for the overall functionality and efficiency of 
+      the cart, ensuring it operates smoothly and effectively fulfills its designated tasks. This collaborative 
+      approach underscores the importance of each individual contribution while highlighting the collective effort 
+      in achieving our project's ambitious goals in autonomous vehicle technology.
+</p>
+      
+      <!-- Supposed to be a subtitle -->
+      <p class="Results2"> Results</p>
+      
+      <p>During the trial, the cart demonstrated its ability to autonomously maneuver through the predefined path, accurately hitting each waypoint without manual intervention. The onboard directional IMU was pivotal in this success, providing real-time orientation data that, when processed alongside the GPS positional information, enabled the cart to dynamically adjust its heading. This synergy between the IMU and GPS data was integral in maintaining the cart's adherence to the desired trajectory.
+The steering control, driven by a combination of IMU feedback and encoder input, executed tight steering maneuvers that were both precise and responsive to the path laid out by the GPS waypoints. The cart's capacity for self-correction was evident, as it navigated the course with a high degree of accuracy, demonstrating the effectiveness of the PID control algorithms embedded within the system.
+</p>
+
+<img src="https://lh3.googleusercontent.com/pw/AP1GczP43JG1boWQ-tcnsIhdn1M1JODYlqsWmd59qCInHOMBqC1IDPW3Jh5uTnk_6QaETRRycPQMh_dRGNX0otnvE5CovzitnIiG79tPKLG1nxmwSfK9AypsiFnmdIgECo9QXrOnJaaHUn5YBGLk9iUKfpY=w781-h440-s-no-gm?authuser=0" width="450" height="286.5" class = "center">
+      
+      
+      <!-- Insert embed here for autonomous cart video -->
+      
+      <iframe width="908" height="511" src="https://www.youtube.com/embed/K0Z8bSODKjI" title="Jonah Rodriguez - Autonomous Delivery Cart - GPS Test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+      </div>
+      

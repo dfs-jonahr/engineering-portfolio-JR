@@ -1,0 +1,59 @@
+body{
+  padding: 25px;
+}
+.title {
+	color: green;
+	font-size: 40pt;
+	text-align: center;
+	
+}
+.Name {
+  text-align: center;
+}
+.Date {
+  text-align: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.Description {
+  text-align: center;
+}
+}
+.Name {
+  text-align: center;
+}
+.InvertedPendulum {
+  font-size: 30pt;
+  text-align: center;
+  background-color: green;
+}
+.DeliveryCart {
+  font-size: 30pt;
+  text-align: center;
+  background-color: green;
+}
+
+.Objs_and_Process1 {
+  font-size: 20pt;
+  text-align: center;
+}
+
+.Results1 {
+  font-size: 20pt;
+  text-align: center;
+}
+
+.Results2 {
+  font-size: 20pt;
+  text-align: center;
+}
+
+.Objs_and_Process2 {
+  font-size: 20pt;
+  text-align: center;
+}
